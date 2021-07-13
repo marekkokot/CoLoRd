@@ -1,9 +1,11 @@
 # CoLoRd - Compressing long reads
 
 [![GitHub downloads](https://img.shields.io/github/downloads/refresh-bio/CoLoRd/total.svg?style=flag&label=GitHub%20downloads)](https://github.com/refresh-bio/CoLoRd/releases)
+<!---
 [![Bioconda downloads](https://img.shields.io/conda/dn/bioconda/colord.svg?style=flag&label=Bioconda%20downloads)](https://anaconda.org/bioconda/colord)
+--->
 [![C/C++ CI](https://github.com/refresh-bio/CoLoRd-dev/workflows/C/C++%20CI/badge.svg)](https://github.com/refresh-bio/CoLoRd-dev/actions)
-[![License](https://anaconda.org/bioconda/colord/badges/license.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A versatile compressor of third generation sequencing reads.
 
@@ -42,11 +44,13 @@ INPUT=./../test
 ## Installation and configuration
 
 CoLoRd comes with a set of [precompiled binaries](https://github.com/refresh-bio/CoLoRd/releases) for Windows, Linux, and OS X. They can be found under Releases tab. 
+<!---
 The software is also available on [Bioconda](https://anaconda.org/bioconda/colord):
 ```
 conda install -c bioconda colord
 ```
 For detailed instructions how to set up Bioconda, please refer to the [Bioconda manual](https://bioconda.github.io/user/install.html#install-conda).
+--->
 CoLoRd can be also built from the sources distributed as:
 
 * Visual Studio 2019 solution for Windows,
