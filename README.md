@@ -19,7 +19,7 @@ cd bin
 INPUT=./../test
 
 # default compression presets (lossy quality, memory priority)
-./colord compress-ont ${INPUT}/M.bovis.fastq ont.default 			# Oxford Nanopore
+./colord compress-ont ${INPUT}/M.bovis.fastq ont.default 		# Oxford Nanopore
 ./colord compress-pbhifi ${INPUT}/D.melanogaster.fastq hifi.default	# PacBio HiFi 
 ./colord compress-pbraw ${INPUT}/A.thaliana.fastq clr.default 		# PacBio CLR/subreads
 
