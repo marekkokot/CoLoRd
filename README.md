@@ -59,7 +59,7 @@ CoLoRd can be also built from the sources distributed as:
 To install G++ under under macOS, one can use *Homebrew* package manager:
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install gcc
+brew install gcc@10
 ```
 Before running CoLoRd on macOS, the current limit of file descriptors should be increased:
 ```
