@@ -4,7 +4,7 @@
 <!---
 [![Bioconda downloads](https://img.shields.io/conda/dn/bioconda/colord.svg?style=flag&label=Bioconda%20downloads)](https://anaconda.org/bioconda/colord)
 --->
-[![C/C++ CI](https://github.com/refresh-bio/CoLoRd-dev/workflows/C/C++%20CI/badge.svg)](https://github.com/refresh-bio/CoLoRd-dev/actions)
+[![C/C++ CI](https://github.com/refresh-bio/CoLoRd/workflows/C/C++%20CI/badge.svg)](https://github.com/refresh-bio/CoLoRd/actions)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A versatile compressor of third generation sequencing reads.
@@ -147,7 +147,7 @@ Options:
 
 
 ## Citing
-[paper](link)
+[Marek Kokot, Adam Gudyś, Heng Li, Sebastian Deorowicz (2021) CoLoRd: Compressing long reads. *bioRxiv* 2021.07.17.452767; doi: https://doi.org/10.1101/2021.07.17.452767](https://doi.org/10.1101/2021.07.17.452767)
 
 
 
