@@ -7,16 +7,15 @@ ifeq ($(UNAME_S),Darwin)
 	CFLAGS = -Wall -O3 -std=c++17 -static-libgcc -static-libstdc++ -pthread
 	CLINK = -Wall -O3 -std=c++17 -static-libgcc -static-libstdc++ -lpthread
 
-	CFLAGS_KMC = -Wall -O3 -m64 -static -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++11
-	CLINK_KMC = -lm -static -O3 -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++11
-
+	CFLAGS_KMC = -Wall -O3 -m64 -static-libgcc -static-libstdc++ -fopenmp -pthread -std=c++11
+	CLINK_KMC = -lm -fopenmp -static-libgcc -static-libstdc++ -O3 -pthread -std=c++11
 else
 	CC=g++
 	CFLAGS = -Wall -O3 -std=c++17 -static -Wl,--whole-archive -lstdc++fs -lpthread -Wl,--no-whole-archive -lrt
 	CLINK = -Wall -O3 -std=c++17 -static -Wl,--whole-archive -lstdc++fs -lpthread -Wl,--no-whole-archive -lrt	
 
-	CFLAGS_KMC = -Wall -O3 -m64 -static-libgcc -static-libstdc++ -fopenmp -pthread -std=c++11 -lrt
-	CLINK_KMC = -lm -fopenmp -static-libgcc -static-libstdc++ -O3 -pthread -std=c++11 -lrt
+	CFLAGS_KMC = -Wall -O3 -m64 -static -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++11 -lrt
+	CLINK_KMC = -lm -static -O3 -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -std=c++11 -lrt
 endif
 
 
